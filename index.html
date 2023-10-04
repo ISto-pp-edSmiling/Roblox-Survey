@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Roblox-Survey></Roblox-Survey></title>
+</head>
+<body>
+    <div class="page_container">
+        <header id="form_title">
+            <h1 id="Roblox">
+                Roblox
+            </h1>
+        </header>
+        <main>
+            <section id="survey_form">
+                <form>
+                    <div class="form_group">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="enter your name">
+                    </div>
+
+                    <div class="form_group">
+                        <label for="age">Age</label>  <!--always use the 'for' for your browser!-->
+                        <input id="age" type="number" min="0" placeholder="enter your age">
+                    </div>
+
+                    <div class="form_group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="enter your email">
+                    </div>
+
+                    <div class="form_group">
+                        <label for="content_type">Content Type</label>
+                        <select id="content_type">
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="1">Horror</option>
+                            <option value="2">Scary</option>
+                            <option value="3">Piss your pants</option>
+                            <option value="4">Fear</option>
+                        </select>
+                    </div>
+
+                    <div class="form_group">
+                        <label>Movie type</label>
+                        <div class="checkbox-group">
+                            <input id="Horror" type="checkbox">
+                            <label for="Horror">Horror</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input id="Terrifing" type="checkbox">
+                            <label for="Terrifing">Terrifing</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input id="Spooky" type="checkbox">
+                            <label for="Spooky">Spooky</label>
+                    </div>
+                        
+                    <div class="form_group">
+                        <label>Gender</label>
+                        <div class="checkbox-group">
+                            <input id="Female" type="checkbox">
+                            <label for="Female">Female</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input id="Male" type="checkbox">
+                            <label for="Male">Male</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input id="Other" type="checkbox">
+                            <label for="Other">Other</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form_group">
+                        <label for="feedback">Feedback</label>
+                        <textarea id="feedback" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div id="form_submit">
+                        <button>Send</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+    </div>
+</body>
+</html>

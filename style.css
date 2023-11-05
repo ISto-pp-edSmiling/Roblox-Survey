@@ -1,0 +1,250 @@
+/*Reset Css Rules*/
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+html {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+body{
+    background-image: url(./782b7fc18a24ee997efd9a7f02fa4bf9-bg_08072019.jpg);
+    color: rgb(255, 255, 255);
+}
+
+.page_container {
+    background-color: rgba(0, 0, 0, 0.589);
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+}
+
+@font-face {
+    font-family: Roblox;
+    src: url(Roblox2017-v6dO.ttf)
+}
+
+#Roblox {
+    text-align: center;
+    font-family: Roblox;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+#survey_form {
+    background-color: rgb(41, 41, 41);
+    max-width: 470px;
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    border: solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    font-family: Poppins;
+    
+    /*display: flex;
+    justify-content: center; */
+}
+
+.form-control_birthday-select-group {
+    border: solid 1px white;
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    font-size: 16px;
+    height: 45px;
+    margin-bottom: 4%;
+}
+
+.rbx-select {
+    padding-left: 7px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+.month-rbx-select-group {
+    width: 40%;
+    border-right: 0px solid #707070;
+    font-family: Poppins;
+}
+
+.day-rbx-select-group {
+    width: 30%;
+
+}
+
+.year-rbx-select-group {
+    width: 30%;
+    border-left: 0px solid #707070;
+}
+
+input[type="text"], input[type="email"] {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+#content_type {
+    position: relative;
+    appearance: none; /* Remove default arrow styling */
+}
+
+.select_btn {
+    height: 45px;
+    cursor: pointer;
+    color: #707070;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;
+    background: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select_btn i {
+    font-size: 30px;
+}
+
+.content, .search {
+    position: relative;
+}
+
+.search i {
+    position: absolute;
+    line-height: 53px;
+    left: 15px;
+    color: black;
+}
+
+.search, input {
+    background: #ffffff;
+    height: 53px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    padding: 0 15px 0 43px;
+    border-radius: 5px;
+    border: 1px solid rgb(146, 146, 146);
+}
+
+.content {
+    border-radius: 10px;
+    background: rgb(255, 255, 255) ;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#searchbar::placeholder {
+    font-family: Poppins;
+    color: rgb(146, 146, 146);
+}
+
+#searchbar {
+    height: 51px;
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0;
+    background: rgb(255, 255, 255);
+}
+
+select {
+    font-family: Poppins;
+    color: #707070;
+    background-color: black;
+    font-size: 16px;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    margin-bottom: 2%;
+}
+
+#content_type, input, .select_btn{
+    border: white 1px solid;
+    padding: 3%;
+    width: 100%;
+}
+
+.content, .options {
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.options::-webkit-scrollbar {
+    width: 7px;
+}
+
+.options::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb {
+    background: #b9b8b8;
+    border-radius: 25px;
+}
+
+.options {
+    color: black;
+}
+
+.options li {
+    padding: 0 13px;
+    font-size: 18px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.options li:hover {
+    background: rgb(224, 224, 224)
+}
+
+
+input {
+    height: 45px;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+textarea {
+    margin-bottom: 20px ;
+}
+
+.checkbox-group input, .checkbox-group label {
+    display: inline-block;
+}
+
+.checkbox-group input {
+    width: auto;
+}
+
+button {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 13px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.767);
+    margin: auto;
+}
+
+option {
+    color: rgb(78, 78, 78);          /* which does not work :( */
+}

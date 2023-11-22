@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    </style>
     <title><Roblox-Survey></Roblox-Survey></title>
 </head>
+
 <body>
     <div class="page_container">
         <header id="form_title">
@@ -16,48 +21,102 @@
         <main>
             <section id="survey_form">
                 <form>
-                    <div class="form_group">
-                        <label for="name">Name</label>
-                        <input id="name" type="text" placeholder="enter your name">
+                    <div class="header">
+                    <p>SIGN UP AND START HAVING FUN!</p>
+                    </div>
+                    <label for="name">Birthday</label>
+                    <div class="form-control_birthday-select-group">
+                        <div class="month-rbx-select-group">
+                          <select class="rbx-select" id="MonthDropdown" name="birthdayMonth">
+                            <option value="" disabled selected="">Month</option>
+                            <option value="Jan">January</option>
+                            <option value="Feb">February</option>
+                            <option value="Mar">March</option>
+                            <option value="Apr">April</option>
+                            <option value="May">May</option>
+                            <option value="Jun">June</option>
+                            <option value="Jul">July</option>
+                            <option value="Aug">August</option>
+                            <option value="Sep">September</option>
+                            <option value="Oct">October</option>
+                            <option value="Nov">November</option>
+                            <option value="Dec">December</option>
+                          </select>
+                          <i class="uil uil-angle-down"></i>
+                        </div>
+                        <div class="day-rbx-select-group">
+                          <select class="rbx-select" id="DayDropdown" name="birthdayDay">
+                            <option value="" disabled selected="">Day</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <!-- Add other days here -->
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                          </select>
+                          <i class="uil uil-angle-down"></i>
+                        </div>
+                        <div class="year-rbx-select-group">
+                          <select class="rbx-select" id="YearDropdown" name="birthdayYear">
+                            <option value="" disabled selected="">Year</option>
+                            <option value="1924">1924</option>
+                            <option value="1925">1925</option>
+                            <option value="1926">1926</option>
+                            <option value="1927">1927</option>
+                            <!-- Add other years here -->
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                          </select>
+                          <i class="uil uil-angle-down"></i>
+                        </div>
+                      </div>
+                    <div class="form_group1">
+                        <label for="name">Username</label>
+                        <input id="name" type="text" placeholder="enter your username">
                     </div>
 
-                    <div class="form_group">
-                        <label for="age">Age</label>  <!--always use the 'for' for your browser!-->
-                        <input id="age" type="number" min="0" placeholder="enter your age">
-                    </div>
-
-                    <div class="form_group">
+                    <div class="form_group2">
                         <label for="email">Email</label>
                         <input id="email" type="email" placeholder="enter your email">
                     </div>
 
-                    <div class="form_group">
+                    <div class="form_group3">
                         <label for="content_type">Content Type</label>
-                        <select id="content_type">
-                            <option value="" disabled selected>Select your option</option>
-                            <option value="1">Horror</option>
-                            <option value="2">Scary</option>
-                            <option value="3">Piss your pants</option>
-                            <option value="4">Fear</option>
-                        </select>
+                        <div class="select_btn">
+                            <span>select content</span>
+                            <i class="uil uil-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="search">
+                            <i class="uil uil-search"></i>
+                            <input id='searchbar' class="text" placeholder="Search">
+                        </div>
+                        <ul class="options">
+                            <li>Australia</li>
+                            <li>Canada</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                            <li>England</li>
+                        </ul>
                     </div>
 
-                    <div class="form_group">
-                        <label>Game type</label>
-                        <div class="checkbox-group">
-                            <input id="Horror" type="checkbox">
-                            <label for="Horror">Horror</label>
-                        </div>
-                        <div class="checkbox-group">
-                            <input id="Terrifing" type="checkbox">
-                            <label for="Terrifing">Terrifing</label>
-                        </div>
-                        <div class="checkbox-group">
-                            <input id="Spooky" type="checkbox">
-                            <label for="Spooky">Spooky</label>
-                    </div>
-                        
-                    <div class="form_group">
+                    <script src="dropdownscript.js"></script>
+
+                    <!--<div class="form_group">
                         <label>Gender</label>
                         <div class="checkbox-group">
                             <input id="Female" type="checkbox">
@@ -71,20 +130,34 @@
                             <input id="Other" type="checkbox">
                             <label for="Other">Other</label>
                         </div>
-                    </div>
+                    </div> -->
                     
-                    <div class="form_group">
+                    <div class="form_group4">
                         <label for="feedback">Feedback</label>
                         <textarea id="feedback" cols="30" rows="10"></textarea>
                     </div>
 
                     <div id="form_submit">
-                        <button>Send</button>
+                        <button>Sign Up</button>
                     </div>
                 </form>
             </section>
         </main>
-
+    </div>
+    <div class="ending">
+        <div class="paragraphs">
+            <p>About Us</p>
+            <p>Jobs</p>
+            <p>Blog</p>
+            <p>Parents</p>
+            <p>Gift Cards</p>
+            <p>Help</p>
+        </div>
+        <div class="paragraphs">
+            <p>Terms</p>
+            <p>Accessibility</p>
+            <p>Privacy</p>
+        </div>
     </div>
 </body>
 </html>

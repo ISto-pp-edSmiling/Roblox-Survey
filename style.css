@@ -17,10 +17,11 @@ body{
 }
 
 .page_container {
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(0, 0, 0, 0.678);
     background-size: cover;
     flex-direction: column;
     display: flex;
+    height: 900px;
 }
 
 @font-face {
@@ -51,8 +52,14 @@ body{
     justify-content: center; */
 }
 
+.header {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+
 .form-control_birthday-select-group {
-    border: solid 1px white;
+    border: solid 1px rgb(129, 129, 129);
     border-radius: 8px;
     width: 100%;
     overflow: hidden;
@@ -108,11 +115,8 @@ input[type="text"], input[type="email"] {
     justify-content: space-between;
 }
 
-.select_btn i {
-    font-size: 30px;
-}
 
-.content, .search {
+.content .search {
     position: relative;
 }
 
@@ -134,11 +138,25 @@ input[type="text"], input[type="email"] {
     border: 1px solid rgb(146, 146, 146);
 }
 
+.select_btn i {
+    font-size: 30px;
+    transition: transform 0.3s linear;
+}
+
+.form_group3.active .select_btn i {
+    transform: rotate(-180deg);
+}
+
 .content {
+    display: none;
     border-radius: 10px;
     background: rgb(255, 255, 255) ;
     padding: 20px;
     margin-top: 10px;
+}
+
+.form_group3.active .content {
+    display: block;
 }
 
 #searchbar::placeholder {
@@ -172,12 +190,12 @@ label {
 }
 
 #content_type, input, .select_btn{
-    border: white 1px solid;
+    border: rgb(129, 129, 129) 1px solid;
     padding: 3%;
     width: 100%;
 }
 
-.content, .options {
+.options {
     margin-top: 10px;
     max-height: 250px;
     overflow-y: auto;
@@ -235,16 +253,42 @@ textarea {
     width: auto;
 }
 
+
+
 button {
-    font-size: 15px;
+    font-family: Poppins;
+    cursor: pointer;
+    font-size: 16px;
     border-radius: 10px;
-    padding: 13px;
+    height: 47px;
     width: 100%;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.767);
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.712);
     margin: auto;
 }
 
 option {
     color: rgb(78, 78, 78);          /* which does not work :( */
+}
+
+.form_group4 {
+    margin-top: 10px;
+}
+
+.ending {
+    flex-direction: column;
+    display: flex;
+    font-size: 19px;
+    font-family: Poppins;
+    background: rgb(41, 41, 41);
+    width: 100%;
+    height: 190px;
+}
+
+.paragraphs {
+    color: #cfcfcf;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 40px;
 }
